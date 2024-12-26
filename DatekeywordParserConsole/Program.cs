@@ -13,7 +13,9 @@ internal class Program
                                 1. Basic: 'today', 'tomorrow', 'yesterday', 'next week', and 'last week'.
                                 2. Relatives: phrases like 'in 3 days', '5 weeks ago', 'in 2 months', and '1 year ago'.
                                 3. Now type: phrases like 'NOW-1d', 'NOW+2h'.
-                                4. Specific date pattern:  pattern like 'format(now, 'yyyy/mm/dd')' , 'format(now, 'yyyy/mm/dd')'.
+                                4. Specific date pattern: pattern like  'Format(today, yyyy-MM-dd)', 
+                                                                        'Format(NOW+2h, HH:mm:ss)',
+                                                                        'Format(in 5 weeks, dddd, MMMM dd)'.
                                 
                            Type 'exit' to quit:");
 
