@@ -2,6 +2,14 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
+	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.0</Version>
+    <Authors>Toheeb</Authors>
+    <Company>Sysbeams</Company>
+    <Description>A library to interpret and expand date-related keywords into actual date and time values.</Description>
+    <PackageId>DateKeywordInterpreter</PackageId>
+    <RepositoryUrl>https://github.com/bayorh/DateKeywordInterpreter.git</RepositoryUrl>
+    <PackageTags>dates, keywords, parsing, time, C#</PackageTags>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
