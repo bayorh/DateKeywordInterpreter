@@ -13,9 +13,10 @@ public class RelativeDateParser : IDateParser
         _isFuture = isFuture;
     }
 
-    public string Parse(string input)
+
+    public string Parse(string dateKeyword)
     {
-        string[] parts = input.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+        string[] parts = dateKeyword.Split(' ', StringSplitOptions.RemoveEmptyEntries);
 
         if (parts.Length >= 2 && int.TryParse(parts[1], out int value))
         {

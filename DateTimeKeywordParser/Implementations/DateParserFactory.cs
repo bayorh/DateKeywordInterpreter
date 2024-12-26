@@ -9,12 +9,11 @@ public class DateParserFactory: IDateParserFactory
     {
         return input switch
         {
-            "today" => new TodayParser(),
-            "tomorrow" => new TomorrowParser(),
-            "yesterday" => new YesterdayParser(),
+            "today" or "tomorrow" or "yesterday" => new BasicDateKeywordParser(),
             "now" or { } when input.StartsWith("now") => new NowParser(),
             _ when input.StartsWith("in ") => new RelativeDateParser(true),
             _ when input.EndsWith(" ago") => new RelativeDateParser(false),
+            _ when input.StartsWith("format(", StringComparison.OrdinalIgnoreCase) => new SpecificFormatParser(),
             _ => null
         };
     }
